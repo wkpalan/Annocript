@@ -1065,14 +1065,12 @@ sub indexed_db_present {
    #Get the array with the extensions
    if ($chosenExts eq "blastIndexedExts"){
 	    @extensions = @blastIndexedExts;
-	    
-	    $descrWord = 'Volumes:';
-	}elsif ($chosenExts eq "ncRNAExts"){
+   }elsif ($chosenExts eq "ncRNAExts"){
 		@extensions = @ncRNAExts;
 		#$out = ".nal";
-		$descrWord = 'DBLIST';
-	}
-		 
+		#$descrWord = 'DBLIST';
+   }
+   $descrWord = 'Volumes:';		 
   
    #my $dbName = extract_name($dbToSearch,0);
    my $dbName = $dbDataFolder."/".$dbToSearch;
